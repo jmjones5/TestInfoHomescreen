@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF2347AA232D258400252AEC /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2347A9232D258400252AEC /* NotificationCenter.framework */; };
+		CF2347AD232D258400252AEC /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2347AC232D258400252AEC /* TodayViewController.swift */; };
+		CF2347B0232D258400252AEC /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF2347AE232D258400252AEC /* MainInterface.storyboard */; };
+		CF2347B4232D258400252AEC /* Device Info.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CF2347A7232D258400252AEC /* Device Info.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CFD1D20C232D38D90089A4A9 /* DeviceInfoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD1D203232D38D90089A4A9 /* DeviceInfoKit.framework */; };
+		CFD1D213232D38D90089A4A9 /* DeviceInfoKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD1D212232D38D90089A4A9 /* DeviceInfoKitTests.swift */; };
+		CFD1D215232D38D90089A4A9 /* DeviceInfoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CFD1D205232D38D90089A4A9 /* DeviceInfoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFD1D218232D38D90089A4A9 /* DeviceInfoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD1D203232D38D90089A4A9 /* DeviceInfoKit.framework */; };
+		CFD1D219232D38D90089A4A9 /* DeviceInfoKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CFD1D203232D38D90089A4A9 /* DeviceInfoKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CFD1D221232D39280089A4A9 /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD1D220232D39280089A4A9 /* DeviceInfo.swift */; };
 		CFF94EFD2326984B00273640 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF94EFC2326984B00273640 /* AppDelegate.swift */; };
 		CFF94EFF2326984B00273640 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF94EFE2326984B00273640 /* ViewController.swift */; };
 		CFF94F022326984B00273640 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFF94F002326984B00273640 /* Main.storyboard */; };
@@ -16,6 +26,41 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		CF2347B2232D258400252AEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFF94EF12326984B00273640 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF2347A6232D258400252AEC;
+			remoteInfo = Widget;
+		};
+		CFD1D20D232D38D90089A4A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFF94EF12326984B00273640 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFD1D202232D38D90089A4A9;
+			remoteInfo = DeviceInfoKit;
+		};
+		CFD1D20F232D38D90089A4A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFF94EF12326984B00273640 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFF94EF82326984B00273640;
+			remoteInfo = TestInfoHomescreen;
+		};
+		CFD1D216232D38D90089A4A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFF94EF12326984B00273640 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFD1D202232D38D90089A4A9;
+			remoteInfo = DeviceInfoKit;
+		};
+		CFD1D222232D50920089A4A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFF94EF12326984B00273640 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFD1D202232D38D90089A4A9;
+			remoteInfo = DeviceInfoKit;
+		};
 		CFF94F0E2326984E00273640 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CFF94EF12326984B00273640 /* Project object */;
@@ -25,7 +70,44 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CF2347B8232D258400252AEC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CF2347B4232D258400252AEC /* Device Info.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFD1D1FA232D386B0089A4A9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CFD1D219232D38D90089A4A9 /* DeviceInfoKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		CF2347A7232D258400252AEC /* Device Info.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Device Info.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF2347A9232D258400252AEC /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		CF2347AC232D258400252AEC /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		CF2347AF232D258400252AEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		CF2347B1232D258400252AEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFD1D203232D38D90089A4A9 /* DeviceInfoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeviceInfoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFD1D205232D38D90089A4A9 /* DeviceInfoKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceInfoKit.h; sourceTree = "<group>"; };
+		CFD1D206232D38D90089A4A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFD1D20B232D38D90089A4A9 /* DeviceInfoKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeviceInfoKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFD1D212232D38D90089A4A9 /* DeviceInfoKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfoKitTests.swift; sourceTree = "<group>"; };
+		CFD1D214232D38D90089A4A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFD1D220232D39280089A4A9 /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
 		CFF94EF92326984B00273640 /* TestInfoHomescreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestInfoHomescreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF94EFC2326984B00273640 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFF94EFE2326984B00273640 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,10 +121,34 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CF2347A4232D258400252AEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2347AA232D258400252AEC /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFD1D200232D38D90089A4A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFD1D208232D38D90089A4A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFD1D20C232D38D90089A4A9 /* DeviceInfoKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CFF94EF62326984B00273640 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFD1D218232D38D90089A4A9 /* DeviceInfoKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,11 +162,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF2347A8232D258400252AEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF2347A9232D258400252AEC /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF2347AB232D258400252AEC /* DeviceInfoWidget */ = {
+			isa = PBXGroup;
+			children = (
+				CF2347AC232D258400252AEC /* TodayViewController.swift */,
+				CF2347AE232D258400252AEC /* MainInterface.storyboard */,
+				CF2347B1232D258400252AEC /* Info.plist */,
+			);
+			path = DeviceInfoWidget;
+			sourceTree = "<group>";
+		};
+		CFD1D204232D38D90089A4A9 /* DeviceInfoKit */ = {
+			isa = PBXGroup;
+			children = (
+				CFD1D205232D38D90089A4A9 /* DeviceInfoKit.h */,
+				CFD1D220232D39280089A4A9 /* DeviceInfo.swift */,
+				CFD1D206232D38D90089A4A9 /* Info.plist */,
+			);
+			path = DeviceInfoKit;
+			sourceTree = "<group>";
+		};
+		CFD1D211232D38D90089A4A9 /* DeviceInfoKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				CFD1D212232D38D90089A4A9 /* DeviceInfoKitTests.swift */,
+				CFD1D214232D38D90089A4A9 /* Info.plist */,
+			);
+			path = DeviceInfoKitTests;
+			sourceTree = "<group>";
+		};
 		CFF94EF02326984B00273640 = {
 			isa = PBXGroup;
 			children = (
 				CFF94EFB2326984B00273640 /* TestInfoHomescreen */,
 				CFF94F102326984E00273640 /* TestInfoHomescreenTests */,
+				CF2347AB232D258400252AEC /* DeviceInfoWidget */,
+				CFD1D204232D38D90089A4A9 /* DeviceInfoKit */,
+				CFD1D211232D38D90089A4A9 /* DeviceInfoKitTests */,
+				CF2347A8232D258400252AEC /* Frameworks */,
 				CFF94EFA2326984B00273640 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +217,9 @@
 			children = (
 				CFF94EF92326984B00273640 /* TestInfoHomescreen.app */,
 				CFF94F0D2326984E00273640 /* TestInfoHomescreenTests.xctest */,
+				CF2347A7232D258400252AEC /* Device Info.appex */,
+				CFD1D203232D38D90089A4A9 /* DeviceInfoKit.framework */,
+				CFD1D20B232D38D90089A4A9 /* DeviceInfoKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,7 +248,73 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		CFD1D1FE232D38D90089A4A9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFD1D215232D38D90089A4A9 /* DeviceInfoKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		CF2347A6232D258400252AEC /* Device Info */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF2347B7232D258400252AEC /* Build configuration list for PBXNativeTarget "Device Info" */;
+			buildPhases = (
+				CF2347A3232D258400252AEC /* Sources */,
+				CF2347A4232D258400252AEC /* Frameworks */,
+				CF2347A5232D258400252AEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFD1D223232D50920089A4A9 /* PBXTargetDependency */,
+			);
+			name = "Device Info";
+			productName = Widget;
+			productReference = CF2347A7232D258400252AEC /* Device Info.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		CFD1D202232D38D90089A4A9 /* DeviceInfoKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFD1D21A232D38D90089A4A9 /* Build configuration list for PBXNativeTarget "DeviceInfoKit" */;
+			buildPhases = (
+				CFD1D1FE232D38D90089A4A9 /* Headers */,
+				CFD1D1FF232D38D90089A4A9 /* Sources */,
+				CFD1D200232D38D90089A4A9 /* Frameworks */,
+				CFD1D201232D38D90089A4A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeviceInfoKit;
+			productName = DeviceInfoKit;
+			productReference = CFD1D203232D38D90089A4A9 /* DeviceInfoKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CFD1D20A232D38D90089A4A9 /* DeviceInfoKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFD1D21D232D38D90089A4A9 /* Build configuration list for PBXNativeTarget "DeviceInfoKitTests" */;
+			buildPhases = (
+				CFD1D207232D38D90089A4A9 /* Sources */,
+				CFD1D208232D38D90089A4A9 /* Frameworks */,
+				CFD1D209232D38D90089A4A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFD1D20E232D38D90089A4A9 /* PBXTargetDependency */,
+				CFD1D210232D38D90089A4A9 /* PBXTargetDependency */,
+			);
+			name = DeviceInfoKitTests;
+			productName = DeviceInfoKitTests;
+			productReference = CFD1D20B232D38D90089A4A9 /* DeviceInfoKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		CFF94EF82326984B00273640 /* TestInfoHomescreen */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CFF94F162326984E00273640 /* Build configuration list for PBXNativeTarget "TestInfoHomescreen" */;
@@ -106,10 +322,14 @@
 				CFF94EF52326984B00273640 /* Sources */,
 				CFF94EF62326984B00273640 /* Frameworks */,
 				CFF94EF72326984B00273640 /* Resources */,
+				CF2347B8232D258400252AEC /* Embed App Extensions */,
+				CFD1D1FA232D386B0089A4A9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CF2347B3232D258400252AEC /* PBXTargetDependency */,
+				CFD1D217232D38D90089A4A9 /* PBXTargetDependency */,
 			);
 			name = TestInfoHomescreen;
 			productName = TestInfoHomescreen;
@@ -140,10 +360,21 @@
 		CFF94EF12326984B00273640 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Jones, Jason (Developer)";
 				TargetAttributes = {
+					CF2347A6232D258400252AEC = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					CFD1D202232D38D90089A4A9 = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
+					};
+					CFD1D20A232D38D90089A4A9 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = CFF94EF82326984B00273640;
+					};
 					CFF94EF82326984B00273640 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -168,11 +399,36 @@
 			targets = (
 				CFF94EF82326984B00273640 /* TestInfoHomescreen */,
 				CFF94F0C2326984E00273640 /* TestInfoHomescreenTests */,
+				CF2347A6232D258400252AEC /* Device Info */,
+				CFD1D202232D38D90089A4A9 /* DeviceInfoKit */,
+				CFD1D20A232D38D90089A4A9 /* DeviceInfoKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CF2347A5232D258400252AEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2347B0232D258400252AEC /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFD1D201232D38D90089A4A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFD1D209232D38D90089A4A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CFF94EF72326984B00273640 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -193,6 +449,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CF2347A3232D258400252AEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2347AD232D258400252AEC /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFD1D1FF232D38D90089A4A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFD1D221232D39280089A4A9 /* DeviceInfo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFD1D207232D38D90089A4A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFD1D213232D38D90089A4A9 /* DeviceInfoKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CFF94EF52326984B00273640 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -213,6 +493,31 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		CF2347B3232D258400252AEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF2347A6232D258400252AEC /* Device Info */;
+			targetProxy = CF2347B2232D258400252AEC /* PBXContainerItemProxy */;
+		};
+		CFD1D20E232D38D90089A4A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFD1D202232D38D90089A4A9 /* DeviceInfoKit */;
+			targetProxy = CFD1D20D232D38D90089A4A9 /* PBXContainerItemProxy */;
+		};
+		CFD1D210232D38D90089A4A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFF94EF82326984B00273640 /* TestInfoHomescreen */;
+			targetProxy = CFD1D20F232D38D90089A4A9 /* PBXContainerItemProxy */;
+		};
+		CFD1D217232D38D90089A4A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFD1D202232D38D90089A4A9 /* DeviceInfoKit */;
+			targetProxy = CFD1D216232D38D90089A4A9 /* PBXContainerItemProxy */;
+		};
+		CFD1D223232D50920089A4A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFD1D202232D38D90089A4A9 /* DeviceInfoKit */;
+			targetProxy = CFD1D222232D50920089A4A9 /* PBXContainerItemProxy */;
+		};
 		CFF94F0F2326984E00273640 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CFF94EF82326984B00273640 /* TestInfoHomescreen */;
@@ -221,6 +526,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		CF2347AE232D258400252AEC /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF2347AF232D258400252AEC /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		CFF94F002326984B00273640 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -240,6 +553,151 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CF2347B5232D258400252AEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z8Z3LH362R;
+				INFOPLIST_FILE = DeviceInfoWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jmjones.TestInfoHomescreenCreator.DeviceInfoWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF2347B6232D258400252AEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z8Z3LH362R;
+				INFOPLIST_FILE = DeviceInfoWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jmjones.TestInfoHomescreenCreator.DeviceInfoWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CFD1D21B232D38D90089A4A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = UW5R88CEN4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DeviceInfoKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jmj.DeviceInfoKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CFD1D21C232D38D90089A4A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = UW5R88CEN4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DeviceInfoKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jmj.DeviceInfoKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CFD1D21E232D38D90089A4A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UW5R88CEN4;
+				INFOPLIST_FILE = DeviceInfoKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jmj.DeviceInfoKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestInfoHomescreen.app/TestInfoHomescreen";
+			};
+			name = Debug;
+		};
+		CFD1D21F232D38D90089A4A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UW5R88CEN4;
+				INFOPLIST_FILE = DeviceInfoKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jmj.DeviceInfoKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestInfoHomescreen.app/TestInfoHomescreen";
+			};
+			name = Release;
+		};
 		CFF94F142326984E00273640 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -359,15 +817,17 @@
 		CFF94F172326984E00273640 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UW5R88CEN4;
+				DEVELOPMENT_TEAM = Z8Z3LH362R;
 				INFOPLIST_FILE = TestInfoHomescreen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jmj.TestInfoHomescreen;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jmjones.TestInfoHomescreenCreator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -377,15 +837,17 @@
 		CFF94F182326984E00273640 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = UW5R88CEN4;
+				DEVELOPMENT_TEAM = Z8Z3LH362R;
 				INFOPLIST_FILE = TestInfoHomescreen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jmj.TestInfoHomescreen;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jmjones.TestInfoHomescreenCreator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -437,6 +899,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CF2347B7232D258400252AEC /* Build configuration list for PBXNativeTarget "Device Info" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF2347B5232D258400252AEC /* Debug */,
+				CF2347B6232D258400252AEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFD1D21A232D38D90089A4A9 /* Build configuration list for PBXNativeTarget "DeviceInfoKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFD1D21B232D38D90089A4A9 /* Debug */,
+				CFD1D21C232D38D90089A4A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFD1D21D232D38D90089A4A9 /* Build configuration list for PBXNativeTarget "DeviceInfoKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFD1D21E232D38D90089A4A9 /* Debug */,
+				CFD1D21F232D38D90089A4A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CFF94EF42326984B00273640 /* Build configuration list for PBXProject "TestInfoHomescreen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
