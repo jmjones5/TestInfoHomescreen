@@ -92,7 +92,7 @@ public struct DeviceInfo {
             
         case "AudioAccessory1,1":                        return "HomePod"
             
-        case "i386", "x86_64":                           return "Simulator \(deviceModel(for: ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] ?? "iOS"))"
+        case "i386", "x86_64":                           return "\(deviceModel(for: ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] ?? "iOS"))"
         default:                                         return identifier
         }
     }
