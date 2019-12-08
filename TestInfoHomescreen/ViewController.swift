@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var iOSVersion: UILabel!
     @IBOutlet weak var deviceModel: UILabel!
     @IBOutlet weak var isProxied: UILabel!
+    @IBOutlet weak var privacyPolicyButton: UIButton!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -23,6 +24,13 @@ class ViewController: UIViewController {
         iOSVersion.text  = "iOS Version: \(DeviceInfo.iOSVersion)"
         deviceModel.text = "Device Model: \(DeviceInfo.deviceModel)"
         isProxied.text   = "Proxy Status: \(DeviceInfo.proxyStatus)"
+    }
+    
+    @IBAction func privacyPolicyPressed(_ sender: Any) {
+        if let privacyPolicyURL = URL(string: "https://jasonable.com/iosdeviceinfo/privacypolicy"),
+            UIApplication.shared.canOpenURL(privacyPolicyURL) {
+            UIApplication.shared.openURL(privacyPolicyURL)
+        }
     }
 }
 

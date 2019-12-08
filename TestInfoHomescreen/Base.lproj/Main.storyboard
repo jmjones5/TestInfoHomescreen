@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="En2-7C-ilR">
-                                <rect key="frame" x="17" y="107" width="341" height="453.5"/>
+                                <rect key="frame" x="17" y="88" width="341" height="491.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="hbw-w3-CSR">
                                         <rect key="frame" x="0.0" y="0.0" width="341" height="341"/>
@@ -43,6 +43,13 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTI-25-F4g">
+                                        <rect key="frame" x="123" y="461.5" width="95" height="30"/>
+                                        <state key="normal" title="Privacy Policy"/>
+                                        <connections>
+                                            <action selector="privacyPolicyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4B0-1y-Pcc"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="hbw-w3-CSR" firstAttribute="width" relation="lessThanOrEqual" secondItem="En2-7C-ilR" secondAttribute="width" id="bJg-iH-mb2"/>
@@ -62,6 +69,7 @@
                         <outlet property="deviceModel" destination="VhK-E9-uj0" id="Unu-FT-IkQ"/>
                         <outlet property="iOSVersion" destination="Ir7-RJ-W4y" id="uTc-7G-py1"/>
                         <outlet property="isProxied" destination="Zls-oa-gxF" id="swe-W5-Ps0"/>
+                        <outlet property="privacyPolicyButton" destination="HTI-25-F4g" id="QDX-A1-wKF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
