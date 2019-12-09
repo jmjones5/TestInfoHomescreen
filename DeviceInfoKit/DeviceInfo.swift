@@ -11,8 +11,7 @@ import Foundation
 public struct DeviceInfo {
     
     public static var iOSVersion: String {
-        let os = ProcessInfo().operatingSystemVersion
-        return String(os.majorVersion) + "." + String(os.minorVersion) + "." + String(os.patchVersion)
+        ProcessInfo().operatingSystemVersionString
     }
     
     public static var deviceModel: String {

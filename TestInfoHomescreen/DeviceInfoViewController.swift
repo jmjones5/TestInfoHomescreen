@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DeviceInfoViewController.swift
 //  TestInfoHomescreen
 //
 //  Created by Jones, Jason (Developer) on 09/09/2019.
@@ -9,7 +9,7 @@
 import UIKit
 import DeviceInfoKit
 
-class ViewController: UIViewController {
+class DeviceInfoViewController: UIViewController {
     @IBOutlet weak var iOSVersion: UILabel!
     @IBOutlet weak var deviceModel: UILabel!
     @IBOutlet weak var isProxied: UILabel!
@@ -21,8 +21,8 @@ class ViewController: UIViewController {
     }
     
     func update() {
-        iOSVersion.text  = "iOS Version: \(DeviceInfo.iOSVersion)"
-        deviceModel.text = "Device Model: \(DeviceInfo.deviceModel)"
+        iOSVersion.text  = "OS: \(DeviceInfo.iOSVersion)"
+        deviceModel.text = "Device: \(DeviceInfo.deviceModel)"
         isProxied.text   = "Proxy Status: \(DeviceInfo.proxyStatus)"
     }
     

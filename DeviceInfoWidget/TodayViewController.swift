@@ -27,8 +27,8 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     }
     
     func update() {
-        iOSVersion.text  = "iOS Version: \(DeviceInfo.iOSVersion)"
-        deviceModel.text = "Device Model: \(DeviceInfo.deviceModel)"
+        iOSVersion.text  = "OS: \(DeviceInfo.iOSVersion)"
+        deviceModel.text = "Device: \(DeviceInfo.deviceModel)"
         isProxied.text   = "Proxy Status: \(DeviceInfo.proxyStatus)"
     }
     
