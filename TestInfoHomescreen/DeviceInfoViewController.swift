@@ -18,7 +18,7 @@ class DeviceInfoViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         update()
-    }
+    }   
     
     func update() {
         iOSVersion.text  = "OS: \(DeviceInfo.iOSVersion)"
