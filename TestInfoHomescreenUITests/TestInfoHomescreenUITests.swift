@@ -15,18 +15,22 @@ class TestInfoHomescreenUITests: XCTestCase {
         continueAfterFailure = false
     }
 
-    func testLaunchPerformance() {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTOSSignpostMetric.applicationLaunch]) {
-                XCUIApplication().launch()
-            }
-        }
-    }
+//    func testLaunchPerformance() {
+//        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
+//            // This measures how long it takes to launch your application.
+//            measure(metrics: [XCTOSSignpostMetric.applicationLaunch]) {
+//                XCUIApplication().launch()
+//            }
+//        }
+//    }
     
     func testScreenshots() {
         let app = XCUIApplication()
+        setupSnapshot(app)
+        
         app.launch()
+        
+        snapshot("App", timeWaitingForIdle: 0)
         
         XCUIDevice.shared.press(.home)
         
@@ -34,11 +38,16 @@ class TestInfoHomescreenUITests: XCTestCase {
         let appIcon = springboard.icons["Device Info"]
         let todayView = springboard.buttons["DEVICE INFO"]
         
-        _ = appIcon.waitForExistence(timeout: 10)
+        _ = appIcon.waitForExistence(timeout: 5)
                         
-        appIcon.press(forDuration: 1)
-        
-        _ = todayView.waitForExistence(timeout: 2)
+        if UIDevice.current.userInterfaceIdiom != UIUserInterfaceIdiom.pad {
+            appIcon.press(forDuration: 1)
+            
+            _ = todayView.waitForExistence(timeout: 5)
+            
+            sleep(5)
+            snapshot("HomeScreenTodayView", waitForLoadingIndicator: false)
+        }
         
         springboard.coordinate(withNormalizedOffset: CGVector(dx: 100, dy: 100)).tap()
         
@@ -52,8 +61,26 @@ class TestInfoHomescreenUITests: XCTestCase {
             let editButton = springboard.buttons["Edit"]
             editButton.tap()
             
-            springboard.buttons["Insert Device Info"].tap()
+            if springboard.buttons["Insert Device Info"].exists {
+                springboard.buttons["Insert Device Info"].tap()
+            } else {
+                springboard.buttons["Insert Device Info, New"].tap()
+            }
+            
             springboard.buttons["Done"].tap()
         }
+        
+        sleep(5)
+        snapshot("LockScreenTodayView", waitForLoadingIndicator: false)
+    }
+}
+
+extension UIDevice {
+    static var isPad: Bool {
+        self.current.userInterfaceIdiom == .pad
+    }
+    
+    static var isPhone: Bool {
+        self.current.userInterfaceIdiom == .phone
     }
 }
