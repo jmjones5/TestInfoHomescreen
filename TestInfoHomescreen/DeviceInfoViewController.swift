@@ -18,12 +18,6 @@ class DeviceInfoViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         update()
-        
-        if #available(iOS 13.0, *) {
-            view.backgroundColor = UIColor { $0.userInterfaceStyle == .dark ? .black : .white }
-        } else {
-            view.backgroundColor = .white
-        }
     }   
     
     func update() {
