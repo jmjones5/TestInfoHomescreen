@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F89FDA92E13F2B100466039 /* deviceInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F89FDA82E13F2B100466039 /* deviceInfo.json */; };
 		5F92D3D12E05C14E00C4C580 /* TestInfoHomescreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F92D3D02E05C14E00C4C580 /* TestInfoHomescreen.swift */; };
 		5FCACB9E2E0461D500153C12 /* DeviceInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCACB9D2E0461D500153C12 /* DeviceInfoView.swift */; };
 		CF2347AA232D258400252AEC /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2347A9232D258400252AEC /* NotificationCenter.framework */; };
@@ -104,6 +105,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5F89FDA82E13F2B100466039 /* deviceInfo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = deviceInfo.json; sourceTree = "<group>"; };
 		5F92D3D02E05C14E00C4C580 /* TestInfoHomescreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestInfoHomescreen.swift; sourceTree = "<group>"; };
 		5FCACB9D2E0461D500153C12 /* DeviceInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfoView.swift; sourceTree = "<group>"; };
 		CF2347A7232D258400252AEC /* Device Info.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Device Info.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -201,6 +203,7 @@
 		CFD1D204232D38D90089A4A9 /* DeviceInfoKit */ = {
 			isa = PBXGroup;
 			children = (
+				5F89FDA82E13F2B100466039 /* deviceInfo.json */,
 				CFD1D205232D38D90089A4A9 /* DeviceInfoKit.h */,
 				CFD1D220232D39280089A4A9 /* DeviceInfo.swift */,
 				CFD1D206232D38D90089A4A9 /* Info.plist */,
@@ -472,6 +475,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F89FDA92E13F2B100466039 /* deviceInfo.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,6 +510,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5F92D3D22E089E5100C4C580 /* Device Info Verification */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Device Info Verification";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"$CONFIGURATION\" == \"Release\" ]; then\n  ./Scripts/deviceInfoScraper -v ./DeviceInfoKit/deviceInfo.json -x $DEVELOPER_DIR -e\nelse\n  ./Scripts/deviceInfoScraper -v ./DeviceInfoKit/deviceInfo.json -x $DEVELOPER_DIR\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CF2347A3232D258400252AEC /* Sources */ = {
