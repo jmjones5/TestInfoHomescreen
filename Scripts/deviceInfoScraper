@@ -6,27 +6,18 @@ require 'optparse'
 
 options = {}
 OptionParser.new do |opts|
-  opts.banner = "Usage: #{$0} [options] [Xcode path]"
+  opts.banner = "Usage: #{$0} [options]"
   opts.separator ""
   opts.separator "A tool to collate and verify all device type to device descriptions from an Xcode installation."
   opts.separator ""
-
-  opts.on("-v [PATH]", "--verify [PATH]", "Verify device info matches against provided path") do |v|
+  opts.separator "Options:"
+  opts.on("-e", "--error", "Error on failed verification. Default is to spit out a warning.") 
+  opts.on("-x PATH", "--xcode-path PATH", "Manually set Xcode path. Defaults to using Xcode-select path if not specified.") 
+  opts.on("-o PATH", "-o", "--output-path PATH", "--output-path", "Output path.") 
+  opts.on("-v [PATH]", "--verify [PATH]", "Verify device info matches against optionally provided path.", "If no path is given defaults to looking for deviceInfo.json in the current directory.") do |v|
     options[:verify] = v ? v : "deviceInfo.json" 
   end
-
-  opts.on("-e", "--error", "Error on failed verification. Default is to spit out a warning") do |e|
-    options[:error] = e
-  end
-
-  opts.on("-x", "--xcode-path PATH", "Manually set Xcode path. Defaults to using Xcode-select path if not specified") do |x|
-    options[:xcodePath] = x
-  end
-  
-  opts.on("-o PATH", "-o", "--output-path PATH", "--output-path", "Output path") do |o|
-    options[:outputPath] = o
-  end
-end.parse!
+end.parse(ARGV, into: options)
 
 xcodePath       = (options[:xcodePath] ? options[:xcodePath] : `xcode-select -p`).chomp
 platformRootDir = xcodePath + "/Platforms"
